@@ -32,7 +32,7 @@ public class praticandoJava {
                     } else {
                         System.out.println("\nCompra realizada com sucesso no valor de " + compra + " Reais.");
                         mesada -= compra;
-                        String.format("%.2f", mesada); // String.format("%.2f", mesada) -> System.out.println("\nSaldo atual: " + mesada) \\
+                        String.format("%.2f", mesada);
                     }
                     break;
                 case 2:
