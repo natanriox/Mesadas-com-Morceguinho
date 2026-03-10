@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class praticandoJava {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+Scanner scanner = new Scanner(System.in);
 
         int opcao;
         System.out.println("=== Mesada do Morceguinho ===\n" +
@@ -32,7 +32,7 @@ public class praticandoJava {
                     } else {
                         System.out.println("\nCompra realizada com sucesso no valor de " + compra + " Reais.");
                         mesada -= compra;
-                        String.format("%.2f", mesada);
+                        System.out.println("Saldo atual: R$ " + String.format("%.2f", mesada));
                     }
                     break;
                 case 2:
@@ -58,5 +58,6 @@ public class praticandoJava {
                     break;
             }
         } while (opcao != 3);
+        scanner.close();
         }
     }
